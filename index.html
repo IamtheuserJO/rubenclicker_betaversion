@@ -7,11 +7,9 @@
   <body>
     <p>Number of clicks:</p>
     <p id="clickDisplay">0</p>
-    <img src="rubenhead.png" id="rubenButton" alt="Ruben" title="Click to gain one click!">
+    <img src="rubenhead.png" id="rubenButton" alt="Ruben" title="Click to gain one click!" onclick="rubenBeaten()">
     <script>
-      var clickCount = 0;
-
-      document.getElementById("rubenButton").addEventListener("Click", rubenBeaten)
+      let clickCount = 0;
 
       function rubenBeaten() {
         clickCount++
