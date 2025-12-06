@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title> Ruben Clicker Beta version</title>
-    <style>
-      #rubenButtonDiv {
-        text-align: center;
-      }
-      #rubenButton {
-        background-color: #E0AF3C;
-      }
-    </style>
   </head>
   <body>
-    <div>Number of clicks: </div>
-    <div id="clickCount">0</div>
-     <div id="rubenButtonDiv"> 
-      <button id="rubenButton>
-        <img id="rubenImg" src="rubenhead.png" alt="Ruben">
-      </button>
-     </div>
+    <p>Number of clicks:</p>
+    <p id="clickDisplay">0</p>
+    <img src="rubenhead.png" id="rubenButton" alt="Ruben" title="Click to gain one click!">
+    <script>
+      var clickCount = 0;
+
+      document.getElementById("rubenButton").addEventListener("Click", rubenBeaten)
+
+      function rubenBeaten() {
+        clickCount++
+
+        document.getElementById("clickDisplay").innerHTML = clickCount
+      }
+    </script>
   </body>
