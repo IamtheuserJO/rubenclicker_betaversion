@@ -8,6 +8,9 @@
         width: 250px;
         max-heigth: 50%;
       }
+      #ouch {
+        text-size: large;
+      }
     </style>
   </head>
   <body>
@@ -15,6 +18,7 @@
     <p>Number of clicks:</p>
     <p id="clickDisplay">0</p>
     <img src="rubenClicker.png" id="rubenButton" alt="Ruben" title="Click to gain one click!" onclick="rubenBeaten()">
+    <p id="ouch" hidden>OUCH!</p>
     <script>
       let clickCount = 0;
 
@@ -22,6 +26,13 @@
         clickCount++
 
         document.getElementById("clickDisplay").innerHTML = clickCount
+
+        document.getElementById("ouch").hidden = false
+        setTimeout(hideOuch, 100)
+
+      }
+      function hideOuch() {
+       document.getElementById("ouch").hidden = true   
       }
     </script>
   </body>
