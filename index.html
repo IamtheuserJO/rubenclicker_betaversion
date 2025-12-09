@@ -5,35 +5,68 @@
     <title> Ruben Clicker Beta version</title>
     <style>
       #rubenButton {
-        width: 250px;
-        max-heigth: 50%;
+        heigth: 50%;
       }
       #ouch {
         font-size: 30px;
+      }
+      #rubenButtonDiv {
+        display: grid;
+        
       }
     </style>
   </head>
   <body>
     <p><strong>Welcome to the beta version of Ruben Clicker!</strong></p>
-    <p><strong>High score:</strong> 2002</p>
-    <p>Number of clicks:</p>
-    <p id="clickDisplay">0</p>
-    <img src="rubenClicker.png" id="rubenButton" alt="Ruben" title="Click to gain one click!" onclick="rubenBeaten()">
+    <p><strong>High score:</strong> 12000 by enormous_fortune </p>
+    <p><strong>Number of clicks:</strong></p>
+    <p id="clickDisplay">Preparing click counter...</p>
+    <p><strong>Your level:</strong></p>
+    <p id="levelDisplay">Preparing user levels...</p>
+    <button id="rebirthButton" onclick="rebirth()">Preparing rebirth...</button>
+    <div id="rubenButtonDiv">  
+      <img src="rubenClicker.png" id="rubenButton" alt="Ruben" title="Click to gain one click!" onclick="rubenBeaten()">
+    </div>
     <p id="ouch" hidden>OUCH!</p>
     <script>
       let clickCount = 0;
-
+      let rebirthEnabled = false;
+      let leftToRebirth = 2000 - clickCount;
+      let rebirthCount = 0;
+      let userLevel = 1 + rebirthCount;
       function rubenBeaten() {
-        clickCount++
+        clickCount += 1 * userLevel
 
         document.getElementById("clickDisplay").innerHTML = clickCount
 
         document.getElementById("ouch").hidden = false
         setTimeout(hideOuch, 100)
 
+        leftToRebirth = 2000 - clickCount
+        if (clickCount < 2000) {
+        document.getElementById("rebirthButton").innerHTML = `${leftToRebirth} clicks left to rebirth!`
+        rebirthEnabled = false;
+        } else {
+        document.getElementById("rebirthButton").innerHTML = "Click to rebirth!"
+        rebirthEnabled = true;
+        }
+
+        document.getElementById("levelDisplay").innerHTML = userLevel
       }
+      
       function hideOuch() {
        document.getElementById("ouch").hidden = true   
+      }
+
+      function rebirth() {
+        if (rebirthEnabled === true) {  
+          rebirthCount++
+          userLevel = 1 + rebirthCount
+          clickCount = 0
+          rebirthEnabled = false
+          document.getElementById("levelDisplay").innerHTML = userLevel
+          document.getElementById("clickDisplay").innerHTML = clickCount
+        }
       }
     </script>
   </body>
