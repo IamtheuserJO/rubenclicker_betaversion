@@ -14,11 +14,10 @@
         cursor: pointer;
       }
       #ouch {
-        font-size: 30px;
+        font-size: 10vh;
         position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(calc(-50% + 20vh), calc(-50% - 20 vh));
+        top: 30%;
+        left: 60%;
         z-index: 4;
       }
       #rubenButtonDiv {
@@ -67,11 +66,13 @@
 
         leftToRebirth = 2000 - clickCount
         if (clickCount < 2000) {
-        document.getElementById("rebirthButton").innerHTML = `${leftToRebirth} clicks left to rebirth!`
-        rebirthEnabled = false;
+          document.getElementById("rebirthButton").innerHTML = `${leftToRebirth} clicks left to rebirth!`
+          rebirthEnabled = false;
+          document.getElementById("rebirthButton").style.cursor = "not-allowed"
         } else {
-        document.getElementById("rebirthButton").innerHTML = "Click to rebirth!"
-        rebirthEnabled = true;
+          document.getElementById("rebirthButton").innerHTML = "Click to rebirth!"
+          rebirthEnabled = true;
+          document.getElementById("rebirthButton").style.cursor = "pointer"
         }
 
         document.getElementById("levelDisplay").innerHTML = userLevel
