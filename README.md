@@ -8,3 +8,9 @@ Upcoming features:
   <li>Premium. Integrated in accounts, make more clicks per click. (Automatic clicks?)</li>
   <li>And more...</li>
 </ul>
+
+Officials:
+<ul>
+  <li><strong>Jonathan Orlenius</strong> <em> The almighty developer. He rules, don't critisize him or get a ban.</em></li>
+  <li><strong>Arkhip Bobrakov (@spetkuber2222)</strong> <em> The one who tests the game. Also currently top player.</em></li>
+</ul>
