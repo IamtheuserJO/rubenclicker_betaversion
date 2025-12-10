@@ -10,7 +10,7 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
   <li>Interface. A better interface will come soon. (Maybe a week, maybe a month. I don't know.)</li>
   <li>And more...</li>
 </ul>
-<em>To reccomend features, please send an email to me.</em>
+<em>To reccomend features, please send an email to me.</em><br>
 <br>
 <strong>Officials:</strong> 
 <br>
