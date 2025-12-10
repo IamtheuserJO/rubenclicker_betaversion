@@ -8,10 +8,13 @@
         position: fixed;
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
         cursor: pointer;
       }
       #ouch {
         font-size: 30px;
+        z-index: 3;
       }
       #rubenButtonDiv {
         display: grid;
@@ -23,9 +26,11 @@
         right: 10px;
         font-size: 10vh;
         font-family: "Comic Sans MS", Courier New, "Garamond";
+        z-index: 1;
       }
       p {
-        font-size: 5vh;
+        font-size: 4vh;
+        z-index: 2;
       }
     </style>
   </head>
