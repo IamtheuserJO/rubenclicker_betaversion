@@ -5,7 +5,7 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
 Upcoming features:
 <ul>
   <li>Account. Save your clicks between devices.</li>
-  <li>Premium. Integrated in accounts, make more clicks per click. (Automatic clicks?)</li>
+  <li>Premium. Integrated in accounts, make more clicks per click. </li>
   <li>And more...</li>
 </ul>
 
