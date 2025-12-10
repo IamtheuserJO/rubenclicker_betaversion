@@ -4,9 +4,10 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
 <br>
 <strong>Upcoming features:</strong>
 <ul>
-  <li></li>
+  <li>Upgrades. Get more clicks per click. (I will not ad autoclicker. You should click yourself. If I find out you are using autoclicker services, your account will be banned.)</li>
   <li>Account. Save your clicks between devices.</li>
   <li>Premium. Integrated in accounts, make more clicks per click. </li>
+  <li>Interface. A better interface will come soon. (Maybe a week, maybe a month. I don't know.)</li>
   <li>And more...</li>
 </ul>
 <em>To reccomend features, please send an email to me.</em>
