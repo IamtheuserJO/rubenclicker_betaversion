@@ -1,4 +1,4 @@
-<DOCTYPE html!>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
       #ouch {
         font-size: 10vh;
         position: fixed;
-        top: 30%;
+        top: 20%;
         left: 60%;
         z-index: 4;
       }
@@ -26,8 +26,8 @@
       }
       #rebirthbutton {
         position: absolute;
-        bottom: 10px;
-        left: 10px;
+        bottom: 0px;
+        left: 0px;
         font-size: 10vh;
         font-family: "Comic Sans MS", Courier New, "Garamond";
         z-index: 2;
@@ -39,16 +39,17 @@
       #hannesButton {
         font-size: 6vh;
         position: fixed;
-        top: 10;
-        right: 10;
+        top: 0px;
+        right: 0px;
         font-family: "Comic Sans MS", Courier New, "Garamond";
+        max-width: 50%;
       }
     </style>
   </head>
   <body>
-    <p><strong>Welcome to the beta version of Ruben Clicker!</strong></p>
+    <p><strong>Welcome to the Beta version of Ruben Clicker!</strong></p>
     
-    <p><strong>High score:</strong> 15025283 clicks <em>by enormous_fortune in level 2197</em></p>
+    <p><strong>High score:</strong><br><br>15025283 clicks <em>by enormous_fortune in level 2197</em></p>
     
     <p><strong>Number of clicks:</strong></p>
     
@@ -118,9 +119,11 @@
 
       function hannesSwitcher() {
         if (clickCount >= 10000) {
-          document.getElementById("rubenButton").src = hannesclicker.png
+          document.getElementById("rubenButton").src = "hannesclicker.png"
+          document.getElementById("hannesButton").hidden = "true"
         }
       }
       
     </script>
   </body>
+</html>
