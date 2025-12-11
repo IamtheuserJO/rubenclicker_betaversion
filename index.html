@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title> Ruben Clicker Beta version</title>
+    <title> Ruben Clicker Test version</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
       #rubenButton {
         height: 50vh;
@@ -24,10 +26,10 @@
         display: grid;
         place-items: center;
       }
-      #rebirthbutton {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
+      #rebirthButton {
+        position: fixed;
+        bottom: 5px;
+        left: 5px;
         font-size: 10vh;
         font-family: "Comic Sans MS", Courier New, "Garamond";
         z-index: 2;
@@ -47,9 +49,9 @@
     </style>
   </head>
   <body>
-    <p><strong>Welcome to the Beta version of Ruben Clicker!</strong></p>
+    <p><strong>Welcome to the test version of Ruben Clicker!</strong></p>
     
-    <p><strong>High score:</strong><br><br>15025283 clicks <em>by enormous_fortune in level 2197</em></p>
+    <p><strong>High score:</strong><br>15025283 clicks <em>by enormous_fortune in level 2197</em></p>
     
     <p><strong>Number of clicks:</strong></p>
     
@@ -70,7 +72,7 @@
     <button id="hannesButton" onclick="hannesSwitcher()">Preparing Hannes mode...</button>
     
     <script>
-      let clickCount = 0;
+      let clickCount = 9990;
       let rebirthEnabled = false;
       let leftToRebirth = 2000 - clickCount;
       let rebirthCount = 0;
@@ -94,7 +96,7 @@
           document.getElementById("rebirthButton").style.cursor = "pointer"
         }
         if (clickCount < 10000) {
-          document.getElementById("hannesButton").innerHTML = "You need more clicks for Hannes Mode"
+          document.getElementById("hannesButton").innerHTML = "You need more clicks for Hannes Mode."
         } else {
           document.getElementById("hannesButton").innerHTML = "Click to enable Hannes mode!"
         }
