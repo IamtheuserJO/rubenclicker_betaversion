@@ -16,6 +16,6 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
 <br>
 <ul>
   <li><strong>Jonathan Orlenius</strong> <em>The almighty developer. He rules, don't critisize him or you get a ban.</em></li>
-  <li><strong>Arkhip Bobrakov (@spetkuber2222)</strong> <em>The one who tests the game. The by far best player.</em></li>
+  <li><strong>Arkhip Bobrakov (@spetkuber2222)</strong> <em>The one who tests the game. The by far best player. The voice actor.</em></li>
   <li><strong>Ossian Karlsson Möllers</strong> <em>The helper. The one who helps with everything. Designs, images, soundtrack, etc.</em></li>
 </ul>
