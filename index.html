@@ -102,6 +102,9 @@
         }
 
         document.getElementById("levelDisplay").innerHTML = userLevel
+        if (userLevel == 67) {
+          document.getElementById("levelDisplay").innerHTML = "66 + 1"
+        }
         ouchAudio.play();
       }
       
