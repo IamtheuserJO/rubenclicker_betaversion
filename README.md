@@ -1,6 +1,6 @@
 This is the beta version of the game Rubenclicker. <br>
 Here you can test the game and, after you tested it, please fill out the form below: <br>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSduT_nbwc9xN8h6WDWu1hONSkVW1hKf1tmlPXXs36Id7C1uTQ/viewform?usp=dialog">Fill out the form here!</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSduT_nbwc9xN8h6WDWu1hONSkVW1hKf1tmlPXXs36Id7C1uTQ/viewform?usp=dialog">Fill out the form here!</a><br>
 Test the early version of the game now on: https://iamtheuserjo.github.io/rubenclicker_betaversion/ <br>
 <br>
 <strong>Upcoming features:</strong>
