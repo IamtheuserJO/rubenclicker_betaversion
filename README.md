@@ -23,7 +23,7 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
 
 <strong>Please don't cheat! It will lead to a ban.</strong>
 
-<strong>What is cheating?<strong>
+<strong>What is cheating?</strong>
 
 <ul>
   <li>Autoclicker. This will lead to a permanent ban.</li>
