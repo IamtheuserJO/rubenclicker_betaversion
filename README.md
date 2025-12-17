@@ -20,3 +20,15 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
   <li><strong>Arkhip Bobrakov (@spetkuber2222)</strong> <em>The one who tests the game. The by far best player. The voice actor.</em></li>
   <li><strong>Ossian Karlsson Möllers</strong> <em>The helper. The one who helps with everything. Designs, images, soundtrack, etc.</em></li>
 </ul>
+
+<strong>Please don't cheat! It will lead to a ban.</strong>
+
+<strong>What is cheating?<strong>
+
+<ul>
+  <li>Autoclicker. This will lead to a permanent ban.</li>
+  <li>Hold down enter-key to upgrade fast. This will lead to a week long ban.</li>
+  <li>If you have a question about if something is cheat, please dm me. A method can be cheat even if it isn't in this list.</li>
+</ul>
+
+If you find a possible cheat or that someone is cheating, please tell me. If what you said is true, you might get a reward (only if you let me know who you are).
