@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title> Rubenclicker Beta version</title>
-    <link rel="icon" type="image/x-icon" href="/rubenclicker_betaversion/favicon.ico">
+    <title> Rubenclicker test version</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
       #rubenButton {
         height: 50vh;
@@ -57,7 +57,7 @@
     </style>
   </head>
   <body>
-    <p><strong>Welcome to the Beta version of Rubenclicker!</strong></p>
+    <p><strong>Welcome to the test version of Rubenclicker!</strong></p>
     
     <p><strong>High score:</strong><br>15025283 clicks <em>by enormous_fortune in level 2197</em></p>
     
@@ -82,9 +82,13 @@
     <p><strong>Clicks per click: </strong><span id="clickperclickdisplay">preparing clicks...</span></p>
 
     <button id="upgradeButton" onclick="upgrade()">Preparing upgrade</button>
-    
+
+    <audio loop id="musicFile">
+      <source src="Dance of the Sugar Plum Fairy.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicButton" onclick="playMusic()">Play the music</button>
     <script>
-      let clickCount = 0;
+      let clickCount = 9990;
       let rebirthEnabled = false;
       let leftToRebirth = 2000 - clickCount;
       let rebirthCount = 0;
@@ -172,14 +176,32 @@
         }
         document.getElementById("clickperclickdisplay").innerHTML = clicksPerClick
         document.getElementById("clickDisplay").innerHTML = clickCount
-        leftToRebirth = clicksForRebirth - clickCount
-        document.getElementById("rebirthButton").innerHTML = `${leftToRebirth} clicks left to rebirth!`
+        if (clickCount < clicksForRebirth) {
+          document.getElementById("rebirthButton").innerHTML = `${leftToRebirth} clicks left to rebirth!`
+          rebirthEnabled = false;
+          document.getElementById("rebirthButton").style.cursor = "not-allowed"
+        } else {
+          document.getElementById("rebirthButton").innerHTML = "Click to rebirth!"
+          rebirthEnabled = true;
+          document.getElementById("rebirthButton").style.cursor = "pointer"
+        }
       }
 
       function displayUpgrade() {
         document.getElementById("upgradeButton").innerHTML = "Upgrade 100:-"
       }
-      
+
+      function playMusic() {
+        document.getElementById("musicFile").play();
+      }
+
+      document.addEventListener("keydown", (event) => {
+        const keyName = event.key;
+  
+        if (keyName === "Enter") {
+          window.location.replace("https://iamtheuserjo.github.io/donttrythat/");
+        }
+      });
     </script>
   </body>
 </html>
