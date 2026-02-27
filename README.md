@@ -6,8 +6,8 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
 <strong>Upcoming features:</strong>
 <ul>
   <li>Upgrades. Get more clicks per click. (I will not ad autoclicker. You should click yourself. If I find out you are using autoclicker services, your account will be banned.)</li>
-  <li><s>Account. Save your clicks between devices.</s></li>
-  <li><s>Premium. Integrated in accounts, make more clicks per click. </s> </li>
+  <li><strike>Account. Save your clicks between devices.</strike></li>
+  <li><strike>Premium. Integrated in accounts, make more clicks per click. </strike> </li>
   <li>Interface. A better interface will come soon. (Maybe a week, maybe a month. I don't know.)</li>
   <li>And more...</li>
 </ul>
