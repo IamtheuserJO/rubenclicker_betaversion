@@ -6,8 +6,8 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
 <strong>Upcoming features:</strong>
 <ul>
   <li>Upgrades. Get more clicks per click. (I will not ad autoclicker. You should click yourself. If I find out you are using autoclicker services, your account will be banned.)</li>
-  <li>Account. Save your clicks between devices.</li>
-  <li>Premium. Integrated in accounts, make more clicks per click. </li>
+  <li><s>Account. Save your clicks between devices.</s></li>
+  <li><s>Premium. Integrated in accounts, make more clicks per click. </s> </li>
   <li>Interface. A better interface will come soon. (Maybe a week, maybe a month. I don't know.)</li>
   <li>And more...</li>
 </ul>
@@ -18,7 +18,7 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
 <ul>
   <li><strong>Jonathan Orlenius</strong> <em>The almighty developer. He rules, don't critisize him or you get a ban.</em></li>
   <li><strong>Arkhip Bobrakov (@spetkuber2222)</strong> <em>The one who tests the game. The by far best player. The voice actor.</em></li>
-  <li><strong>Ossian Karlsson Möllers</strong> <em>The helper. The one who helps with everything. Designs, images, soundtrack, etc.</em></li>
+  <li><strong>Ossian Karlsson Möllers</strong> <em>The other tester.</em></li>
 </ul>
 
 <strong>Please don't cheat! It will lead to a ban.</strong>
@@ -27,7 +27,6 @@ Test the early version of the game now on: https://iamtheuserjo.github.io/rubenc
 
 <ul>
   <li>Autoclicker. This will lead to a permanent ban.</li>
-  <li>Hold down enter-key to upgrade fast. This will lead to a week long ban.</li>
   <li>If you have a question about if something is cheat, please dm me. A method can be cheat even if it isn't in this list.</li>
 </ul>
 
