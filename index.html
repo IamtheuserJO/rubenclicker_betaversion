@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title> Rubenclicker test version</title>
+    <title> Rubenclicker Beta version</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
       #rubenButton {
@@ -57,7 +57,7 @@
     </style>
   </head>
   <body>
-    <p><strong>Welcome to the test version of Rubenclicker!</strong></p>
+    <p><strong>Welcome to the Beta version of Rubenclicker!</strong></p>
     
     <p><strong>High score:</strong><br>15025283 clicks <em>by enormous_fortune in level 2197</em></p>
     
@@ -86,7 +86,13 @@
     <audio loop id="musicFile">
       <source src="Dance of the Sugar Plum Fairy.mp3" type="audio/mpeg">
     </audio>
-    <button id="musicButton" onclick="playMusic()">Play the music</button>
+
+    <audio loop id="musicFile2">
+      <source src="The Entertainer.mp3" type="audio/mpeg">
+    </audio>
+    
+    <button id="musicButton" onclick="playMusic()">Play music 1</button>
+    <button id="musicButton2" onclick="playMusic2()">Play music 2</button>
     <script>
       let clickCount = 0;
       let rebirthEnabled = false;
@@ -193,6 +199,10 @@
 
       function playMusic() {
         document.getElementById("musicFile").play();
+      }
+
+      function playMusic2() {
+        document.getElementById("musicFile2").play();
       }
 
       document.addEventListener("keydown", (event) => {
