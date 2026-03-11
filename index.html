@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title> Rubenclicker Beta version</title>
+    <title> Rubenclicker test version 4.5.3.1</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
       #rubenButton {
@@ -54,10 +54,19 @@
         font-family: "Comic Sans MS", Courier New, "Garamond";
         max-width: 50%;
       }
+      #rubenIDdisplay {
+        cursor: pointer;
+      }
+      #exitButton {
+        position: fixed;
+        left: 50%;
+        top: 1%;
+        transform: translate(-50%, 0%);
+      }
     </style>
   </head>
   <body>
-    <p><strong>Welcome to the Beta version of Rubenclicker!</strong></p>
+    <p><strong>Welcome to the test version of Rubenclicker!</strong></p>
     
     <p><strong>High score:</strong><br>15025283 clicks <em>by enormous_fortune in level 2197</em></p>
     
@@ -93,17 +102,42 @@
     
     <button id="musicButton" onclick="playMusic()">Play music 1</button>
     <button id="musicButton2" onclick="playMusic2()">Play music 2</button>
+
+    <p id="rubenIDdisplay" onclick="showrubenID()">preparing RubenID...</p>
+
+    <button id="exitButton" onclick="exitWebsite()">FAST EXIT</button>
+    
     <script>
-      let clickCount = 0;
+      let clickCount = 9990;
       let rebirthEnabled = false;
       let leftToRebirth = 2000 - clickCount;
       let rebirthCount = 0;
       let accountLevel = 1;
       let upgradeCount = 0;
-      let clicksPerClick = 1 * accountLevel * (2 ** rebirthCount) + (2 * upgradeCount);
+      let clicksPerClick = 1 * accountLevel * (2 ** rebirthCount) + (accountLevel * upgradeCount);
       let upgradeAvilaible = false;
       let clicksForRebirth = 2000;
       const ouchAudio = new Audio("RubenClickerOuch.mp3")
+      
+      function randomID(max) {
+        return Math.floor(Math.random() * max)
+      }
+
+      if (localStorage.getItem('rubenID') == null) {
+        localStorage.setItem('rubenID', randomID(2**32))
+      }
+      
+      let rubenID = localStorage.getItem('rubenID')
+
+      console.log(`Your rubenID is ${rubenID}. Please send this in an email to the developer.`)
+      document.getElementById("rubenIDdisplay").innerHTML = "Open console or click here for RubenID"
+
+      if (rubenID == 1 || rubenID == 4104005536) {
+        accountLevel = 2
+        clicksPerClick = 1 * accountLevel * (2 ** rebirthCount) + (accountLevel * upgradeCount)
+      }
+
+      document.getElementById("levelDisplay").innerHTML = accountLevel
       
       function rubenBeaten() {
         clickCount += 1 * clicksPerClick
@@ -138,7 +172,7 @@
           upgradeAvilaible = true
         }
 
-        document.getElementById("levelDisplay").innerHTML = rebirthCount + 1
+        document.getElementById("levelDisplay").innerHTML = rebirthCount + 1 * accountLevel
         document.getElementById("clickperclickdisplay").innerHTML = clicksPerClick
         ouchAudio.play();
         
@@ -157,7 +191,7 @@
           clicksForRebirth = 2000 * (2 ** rebirthCount)
           leftToRebirth = clicksForRebirth - clickCount
           clicksPerClick = 1 * accountLevel * (2 ** rebirthCount) + (2 * upgradeCount)
-          document.getElementById("levelDisplay").innerHTML = rebirthCount + 1
+          document.getElementById("levelDisplay").innerHTML = rebirthCount + 1 * accountLevel
           document.getElementById("clickDisplay").innerHTML = clickCount
           document.getElementById("rebirthButton").innerHTML = `${leftToRebirth} clicks left to rebirth!`
           document.getElementById("clickperclickdisplay").innerHTML = clicksPerClick
@@ -178,10 +212,13 @@
         } else {
           clickCount -= 100
           upgradeCount++
-          clicksPerClick = 1 * accountLevel * (1 + rebirthCount) + (2 * upgradeCount)
+          clicksPerClick = 1 * accountLevel * (2 ** rebirthCount) + (2 * upgradeCount)
         }
         document.getElementById("clickperclickdisplay").innerHTML = clicksPerClick
         document.getElementById("clickDisplay").innerHTML = clickCount
+        
+        leftToRebirth = clicksForRebirth - clickCount
+        
         if (clickCount < clicksForRebirth) {
           document.getElementById("rebirthButton").innerHTML = `${leftToRebirth} clicks left to rebirth!`
           rebirthEnabled = false;
@@ -191,6 +228,13 @@
           rebirthEnabled = true;
           document.getElementById("rebirthButton").style.cursor = "pointer"
         }
+        
+        if (clickCount < 10000) {
+          document.getElementById("hannesButton").innerHTML = "You need more clicks for Hannes Mode"
+        } else {
+          document.getElementById("hannesButton").innerHTML = "Click to enable Hannes mode!"
+        }
+
       }
 
       function displayUpgrade() {
@@ -212,6 +256,12 @@
           window.location.replace("https://iamtheuserjo.github.io/donttrythat/");
         }
       });
+      function showrubenID() {
+        window.location.href = "https://iamtheuserjo.github.io/rubenclicker/rubenID"
+      }
+      function exitWebsite() {
+        window.location.replace("https://classroom.google.com/c/NzAzNjkxOTg2MTA3")
+      }
     </script>
   </body>
 </html>
